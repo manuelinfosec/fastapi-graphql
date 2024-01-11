@@ -42,3 +42,16 @@ All the data is gotten in just one request with no overfetching since the exact 
 Masonite ORM is known to be clean, easy-to-use, object relational mapping library built for the Masonite web framework. It resembles other popular Active Record implementation, like Django's ORM, Laravel's Eloquent, AdonisJS' Lucid, and active Record in Ruby on Rails, with support for MySQL, Postgres and SQLite.
 
 With the emphasis on convention over configuration, it's easy to create models since you don't have to expllicitly define every single aspect. Relationships are a breeze and very easy to handle as well.
+
+## Starting the Server
+1. Install dependencies from `requirements.txt`:
+```
+pip install -r requirements.txt
+```
+
+2. To start the server, open your terminal, navigate to the project directory, and enter the following command:
+```
+uvicorn main:app
+```
+
+3. Access the beautiful docs at http://localhost:8000/docs or http://localhost:8000/redocs
