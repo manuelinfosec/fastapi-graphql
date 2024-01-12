@@ -5,12 +5,12 @@ from masoniteorm.connections import ConnectionResolver
 
 DATABASES = {
     "default": "postgres",
-    "postgres": {       # set as default
+    "postgres": {  # set as default
         "host": "127.0.0.1",
         "driver": "postgres",
-        "database": "test",
+        "database": "blog_graphql",
         "user": "postgres",
-        "password": "test",
+        "password": "password",
         "port": 5432,
         "log_queries": True,
     },

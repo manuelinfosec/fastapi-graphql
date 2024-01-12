@@ -10,6 +10,11 @@ class MigrationForUserTable(Migration):
         """
         with self.schema.create("users") as table:
             table.increments("id")
+            table.string("name")
+            table.string("email").unique()
+            table.text("address").nullable()
+            table.string("phone_number", 11).nullable()
+            table.enum("sex", ["male", "female"]).nullable()
 
             table.timestamps()
 
