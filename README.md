@@ -55,3 +55,8 @@ uvicorn main:app
 ```
 
 3. Access the beautiful docs at http://localhost:8000/docs or http://localhost:8000/redocs
+
+## Tests
+```bash
+python3 -m pytest
+```
